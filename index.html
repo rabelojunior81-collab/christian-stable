@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian.ai By Rabelus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Merriweather', 'serif'],
+            },
+            colors: {
+              gold: {
+                400: '#FACC15',
+                500: '#EAB308',
+                600: '#CA8A04',
+                700: '#A16207',
+                900: '#422006',
+              },
+              royal: {
+                900: '#1e1b4b',
+              },
+              zinc: {
+                850: '#1f1f22',
+                900: '#18181b',
+                950: '#09090b',
+              }
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            boxShadow: {
+              'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+              'inner-light': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.1)',
+              'glow': '0 0 15px rgba(234, 179, 8, 0.3)',
+            },
+            borderRadius: {
+              'none': '0px',
+              'DEFAULT': '0px',
+              'sm': '0px',
+              'md': '0px',
+              'lg': '0px',
+              'xl': '0px',
+              '2xl': '0px',
+              '3xl': '0px',
+              'full': '0px',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Forçar cantos quadrados em tudo */
+      * {
+        border-radius: 0 !important;
+      }
+      
+      /* Scrollbar Personalizada para sensação Cyber-Cathedral */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #09090b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3f3f46;
+        border-radius: 0px; /* Cantos quadrados conforme solicitado */
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #52525b;
+      }
+      body {
+        background-color: #09090b;
+        color: #e4e4e7;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .glass-panel {
+        background: rgba(24, 24, 27, 0.6);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      /* Efeito de profundidade para o Logo */
+      .emboss-text {
+        text-shadow: -1px -1px 1px rgba(255,255,255,0.1), 1px 1px 2px rgba(0,0,0,0.8);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "dexie": "https://aistudiocdn.com/dexie@^4.2.1",
+    "dexie-react-hooks": "https://aistudiocdn.com/dexie-react-hooks@^4.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
